@@ -2,46 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Iuliia Pidlisna</title>
-    <link rel="stylesheet" href="cv_IuliiaPidlisna.css" />
+    <title> cv </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href="assets/favicon.ico"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
     <!--Header-->
 
-    <header>
-      <figure>
-        <img class="avatar" src="../img/red.JPG" alt="avatar" />
-        <!--        width="400" height="400"-->
-      </figure>
+    <header class="header">
+      <div class="container">
 
-      <h1>Iuliia Pidlisna</h1>
-      <h2>Junior Frontend Developer</h2>
-      <p>
-        I like lean something new, creative and experimenting. I like to read
-        books, dance and yoga. I am prefer healthy lifestyle.
-      </p>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link"> Contacts </a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link"> Summary </a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link"> Skills </a></li>
+            <li class="nav-item"><a href="#code" class="nav-link"> Code </a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link"> Projects </a></li>
+            <li class="nav-item"><a href="#education" class="nav-link"> Education </a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link"> Languages </a></li>
+            <li class="nav-item"><a href="#hobbies" class="nav-link"> Hobbies </a></li>
+          </ul>
+        </nav>
 
-      <div>
-        <h2 class="contacts">Contacts</h2>
-
-        <ul class="contacts-list">
-          <li>Email: Julia.Pidlisna@gmail.com</li>
-          <li>Mobile:(201) 680-17-69</li>
-        </ul>
-      </div>
+    </div>
     </header>
 
     <!--Main Area-->
 
-    <main>
-      <section>
-        <h2 class="about_me">About me</h2>
-        <p>Junior Frontend Develope</p>
+    <main class="main">
+    <div class="container" class="main-container">
+
+      <header class="main-header">
+    <section class="section" id="profile">
+    <h1 class="section-title"> Iuliia Pidlisna </h1>
+    <h3>Junior Frontend Developer</h3>
+
+    <figure>
+    <img class="avatar" src="./assets/img/avatar.jpg" alt="my photo">
+    <!--        width="400" height="400"-->
+  </figure>
+
+    </section>
+      </header>
+
+    <section class="section" id="contacts">
+    <h2 class="section-title"> Contacts </h2>
+    <ul class="contacts-list">
+      <li> Email: Julia.Pidlisna@gmail.com </li>
+      <li> Github: IuliiaPi </li>
+      <li> Telegram: @IuliiaPi </li>
+      <li> Discord: IuliiaPi </li>
+      <!-- <li>Mobile:(201) 680-17-69</li> -->
+    </ul>
+  </section>
+
+      <section class="section" id="summary">
+        <h2 class="section-title"> Summary </h2>
+        <p> I like lean something new, creative and experimenting. I like to read
+        books, dance and yoga. I am prefer healthy lifestyle. </p>
       </section>
 
-      <section>
-        <h2 class="skills">Skills</h2>
-
+      <section class="section" id="skills">
+        <h2 class="section-title"> Skills </h2>
         <ul class="skills-list">
           <li>JavaScript</li>
           <li>HTML</li>
@@ -50,8 +78,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2 class="example_code">Example code</h2>
+      <section class="section" id="code">
+        <h2 class="section-title"> Code </h2>
         <pre class="code">
             function sum (a, b){
             return a + b;
@@ -59,57 +87,53 @@
         </pre>
       </section>
 
-      <section>
-        <h2 class="projects">Projects</h2>
-
-        <nav class="list-projects">
-          <ul>
-            <li>
-              <a href="#">BMI</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">BMI</a>
-            </li>
+      <section class="section" id="projects">
+        <h2 class="section-title"> Projects </h2>
+        <nav class="nav">
+          <ul class="projects-list">
+            <li class="nav-item"><a href="#" class="nav-link"> BMI </a></li>
+            <li class="nav-item"><a href="#" class="nav-link"> BMI </a></li>
           </ul>
         </nav>
       </section>
 
-      <div>
-        <h2 class="education">Education</h2>
-        <span>Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine</span>
-        <span class="period">(September 2004 - June 2010)</span>
-      </div>
+      <section class="section" id="education">
+        <h2 class="section-title"> Education </h2>
+        <p>Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine <span> (September 2004 - June 2010) </span></p>
+      </section>
 
-      <div>
-        <h2 class="languages">Languages</h2>
-
+      <section class="section" id="languages">
+        <h2 class="section-title"> Languages </h2>
         <ul class="languages-list">
           <li>English</li>
           <li>Ukrainian</li>
           <li>Russian</li>
         </ul>
-      </div>
+      </section>
 
-      <div>
-        <h2 class="hobbies">Hobbies</h2>
-
+      <section class="section" id="hobbies">
+        <h2 class="section-title"> Hobbies </h2>
         <ul class="hobbies-list">
           <li>Music</li>
           <li>Yoga</li>
           <li>Painting</li>
         </ul>
-      </div>
+      </section>
+
+    </div>
     </main>
 
     <!--Footer-->
 
     <footer class="footer">
+    <div class="container">
+
       <time> 2022 </time>
+
       <a href="https://github.com/IuliiaPi">
         <img class="github" src="https://github/images/github" alt="github" />
       </a>
+
       <a href="https://rs.school/js/">
         <img
           class="rs_school_img"
@@ -117,6 +141,9 @@
           alt="rs_school"
         />
       </a>
+
+    </div>
     </footer>
+
   </body>
 </html>
