@@ -81,8 +81,9 @@
       <section class="section" id="code">
         <h2 class="section-title"> Code </h2>
         <pre class="code">
-            function sum (a, b){
-            return a + b;
+            function mergeArrays(arr1, arr2) {
+              const newArray = [...new Set(arr1.concat(arr2))];
+              return newArray.sort((a, b) => a - b);
             }
         </pre>
       </section>
