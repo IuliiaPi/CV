@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
   </head>
 
   <body>
@@ -101,13 +106,11 @@
 
         <section class="section" id="code">
           <h2 class="section-title">Code</h2>
-          <pre class="code">
+          <pre class="code"> <code class="html">
             function mergeArrays(arr1, arr2) {
               const newArray = [...new Set(arr1.concat(arr2))];
               return newArray.sort((a, b) => a - b);
-            }
-        </pre
-          >
+            } </code> </pre>
         </section>
 
         <section class="section" id="projects">
