@@ -1,0 +1,8 @@
+.conteiner {
+
+}
+
+.conteiner div {
+  min-width: 200px;
+  border: 1px solid rgba(255, 0, 0, 0.473);
+}
