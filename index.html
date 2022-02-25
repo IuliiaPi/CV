@@ -12,10 +12,13 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js"></script>
 
     <!-- <link rel="stylesheet" href="/path/to/styles/default.min.css">
 <script src="/path/to/highlight.min.js"></script>
@@ -27,8 +30,9 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script> -->
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
 
   <body>
@@ -70,22 +74,21 @@
     <!--Main Area-->
 
     <main class="main">
-
-      <aside class="aside"> 
-
+      <aside class="aside">
         <header class="main-header">
           <section class="section" id="profile">
-          
             <figure>
               <img
                 class="avatar"
-                src="./assets/svg/myavatar.jpg"
-                alt="my photo" width="50" height="50">
+                src="https://github.com/IuliiaPi/CV/blob/main/assets/svg/myavatar.jpg?raw=true"
+                alt="my photo"
+                width="50"
+                height="50"
+              />
             </figure>
 
             <h1 class="section-title">Iuliia Pidlisna</h1>
             <h4>Junior Frontend Developer</h4>
-
           </section>
         </header>
 
@@ -101,27 +104,25 @@
         </section>
 
         <section class="section" id="languages">
-        <h2 class="section-title">Languages</h2>
-        <ul class="languages-list">
-          <li>English</li>
-          <li>Ukrainian</li>
-          <li>Russian</li>
-        </ul>
-      </section>
+          <h2 class="section-title">Languages</h2>
+          <ul class="languages-list">
+            <li>English</li>
+            <li>Ukrainian</li>
+            <li>Russian</li>
+          </ul>
+        </section>
 
-      <section class="section" id="hobbies">
-        <h2 class="section-title">Hobbies</h2>
-        <ul class="hobbies-list">
-          <li>Music</li>
-          <li>Yoga</li>
-          <li>Painting</li>
-        </ul>
-      </section>
-
+        <section class="section" id="hobbies">
+          <h2 class="section-title">Hobbies</h2>
+          <ul class="hobbies-list">
+            <li>Music</li>
+            <li>Yoga</li>
+            <li>Painting</li>
+          </ul>
+        </section>
       </aside>
 
       <article class="container" id="main-container">
-
         <section class="section" id="summary">
           <h2 class="section-title">Summary</h2>
           <p>
@@ -166,8 +167,6 @@
             <span> (September 2004 - June 2010) </span>
           </p>
         </section>
-
-        
       </article>
     </main>
 
@@ -175,47 +174,53 @@
 
     <footer class="footer">
       <div class="container" id="footer-container">
-    
-    <div>
-        <time> 2022 </time>
-      </div>
-
         <div>
-        <a href="https://github.com/IuliiaPi">
-          <img class="github" src="https://github/images/github" alt="github" width="50" height="50"></a>
+          <time> 2022 </time>
         </div>
 
         <div>
-        <a href="https://rs.school/js/">
-          <img class="rs_school_img"
-            src="https://rs.school/images/rs_school_js.svg"
-            alt="rs_school" width="50" height="50"></a>
-          </div>
-          
+          <a href="https://github.com/IuliiaPi">
+            <img
+              class="github"
+              src="https://github/images/github"
+              alt="github"
+              width="50"
+              height="50"
+          /></a>
+        </div>
+
+        <div>
+          <a href="https://rs.school/js/">
+            <img
+              class="rs_school_img"
+              src="https://rs.school/images/rs_school_js.svg"
+              alt="rs_school"
+              width="50"
+              height="50"
+          /></a>
+        </div>
       </div>
     </footer>
-
   </body>
 
   <script>
-  function injectCss(file = 'style.css') {
-  fetch(file)
-    .then((response) => response.text())
-    .then((data) => {
-      let stl = document.createElement('style');
-      stl.innerHTML = data;
-      document.head.appendChild(stl);
-    });
-}
+    function injectCss(file = 'style.css') {
+      fetch(file)
+        .then((response) => response.text())
+        .then((data) => {
+          let stl = document.createElement('style');
+          stl.innerHTML = data;
+          document.head.appendChild(stl);
+        });
+    }
 
-function injectAll() {
-  let links = document.getElementsByTagName('link');
-  for (stl of links) {
-    injectCss(stl.href);
-  }
-}
+    function injectAll() {
+      let links = document.getElementsByTagName('link');
+      for (stl of links) {
+        injectCss(stl.href);
+      }
+    }
 
-window.onload = injectAll;
+    window.onload = injectAll;
   </script>
-
 </html>
