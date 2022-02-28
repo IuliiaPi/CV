@@ -46,13 +46,13 @@ border: 1px solid #829985;
 border-radius: 50%;
 }
 
-.link {
+.nav-link {
   text-decoration: none;    /* no podcherkivaniia */
   color: #829985;
   transition: color 0.5s;
 }
 
-.link:hover {
+.nav-link:hover {
   color: #5d7260;      /* pri navedenii */
 }
 
@@ -138,6 +138,10 @@ footer {
   justify-content:space-around;
   align-items: center;
   
+}
+
+.myGithub a {
+  text-decoration: none; 
 }
 
 /* .avatar {
