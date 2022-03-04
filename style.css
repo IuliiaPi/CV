@@ -56,6 +56,22 @@ border-radius: 50%;
   color: #5d7260;      /* pri navedenii */
 }
 
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+
+  transition: .3s;
+}
+
+
 .main {
   display: flex;
 }
@@ -94,20 +110,6 @@ border-radius: 50%;
   }
 }
 
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  list-style: none;
-}
-
-.nav-link {
-  padding: 0 20px;
-  line-height: 50px;
-
-  transition: .3s;
-}
 
 header,
 main,
