@@ -82,9 +82,13 @@ border-radius: 50%;
   display: flex;
 }
 
+#main {
+  display: flex;
+}
+
 .aside {
-  width: 30%;
-  background-color: rgba(65, 228, 228, 0.418);
+  /* width: 30%; */
+  /* background-color: rgba(65, 228, 228, 0.418); */
 }
 
 
