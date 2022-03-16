@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>cv</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- viewport шириной (ширину страницы, равную ширине экрана устройства) с начальным масштабированием 1 (Значение единица масштабирует страницу по умолчанию) и запретом пользователю масштабирования документа -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8" name="description" content="cv Iuliia Pidlisna" />
+    <meta property="og:image" content="./img/images-header.jpg">
+    <title> cv </title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="Basic" />
+
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
+    <!-- first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon72.png">
+    <!-- basic favicon -->
+<link rel="icon" href="/favicon32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon16.png" type="image/png" sizes="16x16">
+
     <!-- <link rel="icon" href="assets/favicon.ico"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,18 +91,20 @@
     <main class="main">
     <div class="container" id="main">
 
+      <!--------  Main Area : aside  ------>
+
       <div class="aside">
 
         <header class="main-header">
           <section class="section" id="profile">
             <figure>
               <img
-                class="avatar" class="w3-circle"
+                class="avatar"
                 
                 src="https://github.com/IuliiaPi/CV/blob/main/assets/svg/myavatar.jpg?raw=true"
                 alt="my photo"
-                width="200"
-                height="200"
+                width="250"
+                height="250"
               />
             </figure>
 
@@ -102,13 +115,14 @@
 
         <section class="section" id="contacts">
           <h2 class="section-title">Contacts</h2>
+          <address class="address">
           <ul class="contacts-list">
             <li>Email: <a href="email:Julia.Pidlisna@gmail.com"> Julia.Pidlisna@gmail.com </a> </li>
-            <li>Github: IuliiaPi</li>
-            <li>Telegram: @IuliiaPi</li>
-            <li>Discord: IuliiaPi#7924</li>
-            <!-- <li>Mobile:(201) 680-17-69</li> -->
+            <li>Github: <a href="Github:IuliiaPi"> IuliiaPi </a> </li>
+            <li>Telegram: <a href="Telegram:@IuliiaPi"> @IuliiaPi </a> </li>
+            <li>Discord: <a href="Discord:IuliiaPi#7924"> IuliiaPi#7924 </a> </li>
           </ul>
+          <address>
         </section>
 
         <section class="section" id="languages">
@@ -130,16 +144,18 @@
         </section>
       </div>
 
-      <div class="container" id="main-container">
+      <!---------  Main Area : main-container ---------->
+
+      <div id="main-container">
         
         <section class="section" id="summary">
           <h2 class="section-title">Summary</h2>
           <p>
-            I am a Junior Front-End Developer, who like lean something new, creative and experimenting. 
+            I am a Junior Front-End Developer, who embrace and adapt quickly to new responsibilities, and am enthusiastic to gain new knowledge, skills, and techniques. 
             <br>
             I like to read books, dance and yoga. I am prefer healthy lifestyle.
             <br>
-            My goal is to improve JavaScript skills and create new projects that will help people.
+            My goal is to find rewarding, but challenging new skills to build a solid foundation of knowledge.
           </p>
         </section>
 
@@ -180,10 +196,8 @@
 
         <section class="section" id="education">
           <h2 class="section-title">Education</h2>
-          <p>
-            Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
-            <span> (September 2004 - June 2010) </span>
-          </p>
+          <p> Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+            <span class="span-education-years"> (September 2004 - June 2010) </span></p>
         </section>
 
         <section class="section" id="video">
